@@ -41,35 +41,20 @@ Our trained model achieves **90% accuracy** on the benchmark dataset, offering a
 ## 🎯 Results
 Model achieves around **90% accuracy** on the test set.  
 
-<p align="center">
-  <img src="https://github.com/AnfalAlkuraydis/Arabic-sign-language-detection/blob/main/assets/results.jpg" width="500"/>
-</p>
-
 ---
 
 ## 🖥️ Demo
 The system can run in real time with webcam input:  
 
 <p align="center">
-  <img src="https://github.com/AnfalAlkuraydis/Arabic-sign-language-detection/blob/main/assets/demo.png" width="600"/>
+  <img src="https://github.com/AnfalAlkuraydis/Arabic-sign-language-detection/blob/main/assets/results.jpg" width="500"/>
 </p>
 
 ---
 
-## 🔤 Arabic Alphabet Signs
-<p align="center">
-  <img src="https://github.com/AnfalAlkuraydis/Arabic-sign-language-detection/blob/main/assets/signLanguage.png" width="750"/>
-</p>
+## ⚙️ Installation
 
----
-
-## 🚀 Quickstart
+Clone the repository:
 ```bash
-# Create environment
-python -m venv .venv && source .venv/bin/activate
-# Install dependencies
-pip install -r requirements.txt
-# Train / run inference
-jupyter lab
-# or test single image
-python inference.py --image sample.jpg --model arabic_sign_language_model.keras --labels label_encoder.pkl
+git clone https://github.com/AnfalAlkuraydis/Arabic-sign-language-detection.git
+cd Arabic-sign-language-detection
