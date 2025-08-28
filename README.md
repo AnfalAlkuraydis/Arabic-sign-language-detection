@@ -1,8 +1,3 @@
-# Arabic Sign Language Detection
-
-<p align="center">
-  <img src="https://github.com/AnfalAlkuraydis/Arabic-sign-language-detection/blob/main/assets/signLanguage.png" width="650"/>
-</p>
 
 ---
 <div align="center">
@@ -42,6 +37,7 @@ Our trained model achieves **90% accuracy** on the benchmark dataset, offering a
 
 ## 🔄 Pipeline
 
+
 ```mermaid
 flowchart LR
   A["Dataset<br/>(RGB Arabic Alphabets Sign Language)"] --> B["Preprocessing<br/>resize • normalize • one-hot"]
@@ -51,6 +47,7 @@ flowchart LR
   E --> F["Deployment<br/>web demo • real-time recognition"]
 
 ---
+
 
 ## 📊 Dataset
 - **Source**: [Kaggle dataset](https://www.kaggle.com/datasets/muhammadalbrham/rgb-arabic-alphabets-sign-language-dataset)  
