@@ -5,6 +5,25 @@
 </p>
 
 ---
+<div align="center">
+
+<div align="center">
+
+# 🤟 **Arabic Sign Language Detection**
+
+![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-vision-5C3EE8?logo=opencv&logoColor=white)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-holistic-FF6F00)
+![Streamlit](https://img.shields.io/badge/Streamlit-UI-FF4B4B?logo=streamlit&logoColor=white)
+
+<p align="center">
+  <img src="https://github.com/AnfalAlkuraydis/Arabic-sign-language-detection/blob/main/assets/signLanguage.png" width="650"/>
+</p>
+
+</div>
+
+---
 
 ## 📝 Abstract
 Arabic Sign Language (ArSL) is the main communication medium for the deaf community in the Arab world.  
@@ -15,19 +34,21 @@ Our trained model achieves **90% accuracy** on the benchmark dataset, offering a
 
 ## 📖 Overview
 - Preprocess RGB hand sign images (resize, normalize).
-- Train a deep CNN / transfer learning model (MobileNetV2).
+- Train a **TensorFlow/Keras** CNN using transfer learning (**MobileNetV2**).
 - Validate on held-out test data.
 - Deploy a **live demo app** that predicts hand signs from the camera.
 
 ---
 
 ## 🔄 Pipeline
-1. **Dataset**: [RGB Arabic Alphabets Sign Language Dataset](https://www.kaggle.com/datasets/muhammadalbrham/rgb-arabic-alphabets-sign-language-dataset)  
-2. **Preprocessing**: image resizing, normalization, one-hot encoding.  
-3. **Modeling**: deep CNN with augmentation + callbacks (early stopping, learning rate scheduling).  
-4. **Training**: stratified train/val/test split.  
-5. **Evaluation**: accuracy, confusion matrix, per-class performance.  
-6. **Deployment**: web-based demo for real-time recognition.
+
+```mermaid
+flowchart LR
+  A["Dataset<br/>(RGB Arabic Alphabets Sign Language)"] --> B["Preprocessing<br/>resize • normalize • one-hot"]
+  B --> C["Modeling<br/>MobileNetV2 (TensorFlow/Keras)<br/>+ augmentation & callbacks"]
+  C --> D["Training<br/>stratified train/val/test split"]
+  D --> E["Evaluation<br/>accuracy • confusion matrix • per-class"]
+  E --> F["Deployment<br/>web demo • real-time recognition"]
 
 ---
 
@@ -58,3 +79,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/AnfalAlkuraydis/Arabic-sign-language-detection.git
 cd Arabic-sign-language-detection
+
+---
+
+<div align="center"> Made with ❤️ — bridging computer vision and Arabic sign language. </div>
